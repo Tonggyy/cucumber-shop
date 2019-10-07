@@ -18,4 +18,8 @@ public class ProductCatalog {
     public Product getProduct(String name) {
         return products.get(name);
     }
+
+    public void addProduct(String name, double price, int stock) {
+        products.put(name, new Product(name, price, stock));
+    }
 }
